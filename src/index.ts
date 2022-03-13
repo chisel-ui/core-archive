@@ -149,6 +149,12 @@ export const sizes: Sizes = {
     xxlarge: `${xxlarge}px`,
 };
 
+export interface LayoutProps {
+    gutter?: Gutter
+    theme?: BaseTheme
+    as?: string
+}
+
 function fromEntries<T>(entries: [s: string, value: T][]): Record<string, T> {
     return entries.reduce((acc, [key, value]) => {
         return { ...acc, [key]: value };

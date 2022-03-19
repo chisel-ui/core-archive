@@ -1,0 +1,4 @@
+dist
+package-log.json
+node_modules
+.husky

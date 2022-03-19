@@ -1,6 +1,6 @@
 {
 	"name": "@chisel-ui/core",
-	"version": "0.1.3",
+	"version": "0.2.0",
 	"description": "chisel-ui core helpers",
 	"private": false,
 	"main": "./dist/index.js",
@@ -11,12 +11,10 @@
 			"require": "./dist/index.js",
 			"import": "./dist/index.mjs",
 			"type": "./dist/index.d.ts"
-		},
-		"./astro": "./src/astro"
+		}
 	},
 	"files": [
-		"dist",
-		"astro"
+		"dist"
 	],
 	"scripts": {
 		"build": "tsup src/index.ts --format cjs,esm --dts --clean",

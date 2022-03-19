@@ -1,18 +1,26 @@
 {
 	"name": "@chisel-ui/core",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "chisel-ui core helpers",
 	"private": false,
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
 	"exports": {
-		".": "./src/index.ts",
-		"./Component.astro": "./astro/Component.astro",
-		"./Spacer.astro": "./astro/Spacer.astro"
+		".": {
+			"require": "./dist/index.js",
+			"import": "./dist/index.mjs",
+			"type": "./dist/index.d.ts"
+		},
+		"./astro": "./src/astro"
 	},
 	"files": [
-		"src",
+		"dist",
 		"astro"
 	],
 	"scripts": {
+		"build": "tsup src/index.ts --format cjs,esm --dts --clean",
+		"prepublishOnly": "npm run build",
 		"prepare": "husky install"
 	},
 	"lint-staged": {

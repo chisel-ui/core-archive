@@ -1,11 +1,12 @@
 {
 	"name": "@chisel-ui/core",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "chisel-ui core helpers",
 	"private": false,
 	"exports": {
 		".": "./src/index.ts",
-		"./astro": "./astro/index.ts"
+		"./Component.astro": "./astro/Component.astro",
+		"./Spacer.astro": "./astro/Spacer.astro"
 	},
 	"files": [
 		"src",

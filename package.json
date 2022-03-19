@@ -1,6 +1,6 @@
 {
 	"name": "@chisel-ui/core",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "chisel-ui core helpers",
 	"private": false,
 	"exports": {
@@ -8,8 +8,8 @@
 		"./astro": "./astro/index.ts"
 	},
 	"files": [
-		"src/index.ts",
-		"astro/index.ts"
+		"src",
+		"astro"
 	],
 	"scripts": {
 		"prepare": "husky install"
